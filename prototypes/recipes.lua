@@ -120,7 +120,7 @@ data:extend({
     category = "advanced-crafting",
     enabled = false,
     energy_required = 5,
-    ingredients = tf.compilePrereqs{parts.preferred({"gold-plate", "fi_materials_gold", "silver-wire", "tinned-cable", "copper-cable"}, {1, 1, 2, 2, 2}), 
+    ingredients = tf.compilePrereqs{parts.preferred({"gold-plate", "fi_gold", "silver-wire", "tinned-cable", "copper-cable"}, {1, 1, 2, 2, 2}), 
       parts.preferred({"ll-silica", "bismuth-glass", mods["Krastorio2"] and "kr-glass" or "glass", "kr-quartz", "silica", "tin-plate", "iron-plate"}, {4, 2, 2, 1, 5, 2, 1}), parts.preferred({"silver-plate", "copper-plate"}, {1, 1}), 
         parts.optionalIngredient("tungsten-plate", 1)},
     results = {{type="item", name="empty-amplifier-tube", amount=1}},
@@ -148,7 +148,7 @@ data:extend({
     enabled = false,
     energy_required = 2,
     ingredients = tf.compilePrereqs{{type="fluid", name="petroleum-gas", amount=100}, {type="item", name="empty-amplifier-tube", amount=1}, {type="item", name="advanced-circuit", amount=1}, {type="item", name="battery", amount=10}, 
-      parts.preferred({"ti-sapphire", "diamond", "el_energy_crystal_item"}, {1, 1, 1}), parts.optionalIngredient("advanced-cable", 1)},
+      parts.preferred({"ti-sapphire", "diamond", "el_energy_crystal"}, {1, 1, 1}), parts.optionalIngredient("advanced-cable", 1)},
     results = {{type="item", name="carbon-dioxide-laser", amount=1}}
   },
   {
